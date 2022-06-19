@@ -5,3 +5,25 @@ body{
     padding:1em;
     background:$primary-color;
 }
+
+// .container nav ul>li:nth-child(1){
+//     font-size: 1em;
+// }
+
+//Nesting
+.container{
+    width: 100%;
+    height: 100%;
+    nav{
+        ul{
+            li{
+                font-size: 1em;
+            }
+        }
+        a{
+            text-decoration: none
+        } 
+    }
+} 
+
+//Partials

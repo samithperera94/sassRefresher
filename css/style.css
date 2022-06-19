@@ -3,4 +3,11 @@ body {
   background: #e5e5e5;
 }
 
+.container nav ul li {
+  font-size: 1em;
+}
+.container nav a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
