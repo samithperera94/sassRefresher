@@ -1,13 +1,44 @@
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 1em;
   background: #e5e5e5;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+}
 .container nav ul li {
   font-size: 1em;
 }
 .container nav a {
   text-decoration: none;
+}
+
+.transfrom {
+  width: 150px;
+  height: 80px;
+  background-color: yelow;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(20deg) scale(1.5);
+  font-size: 3em;
+}
+
+.transfrom-2 {
+  width: 400px;
+  height: 500px;
+  background-color: yelow;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(20deg) scale(1.5);
 }
 
 /*# sourceMappingURL=style.css.map */

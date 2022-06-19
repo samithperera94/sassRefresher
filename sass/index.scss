@@ -1,5 +1,5 @@
 $primary-color:#e5e5e5;
-
+@import 'default'; // importing a partial
 
 body{
     padding:1em;
@@ -26,4 +26,29 @@ body{
     }
 } 
 
-//Partials
+//mixins
+
+@mixin  transform_me($prop1,$prop2) {
+    width: $prop1;
+    height: $prop2;
+    background-color: yelow;
+    -ms-transform: rotate(20deg) scale(1.5);
+    -webkit-transform: rotate(20deg) scale(1.5);
+    transform: rotate(20deg) scale(1.5); 
+}
+.transfrom{
+    // width: 150px;
+    // height: 80px;
+    // background-color: yelow;
+    // -ms-transform: rotate(20deg) scale(1.5);
+    // -webkit-transform: rotate(20deg) scale(1.5);
+    // transform: rotate(20deg) scale(1.5);
+
+    @include transform_me(150px,80px );
+    font-size: 3em;
+
+}
+
+.transfrom-2{
+    @include transform_me(400px,500px )
+}
